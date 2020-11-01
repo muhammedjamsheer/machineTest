@@ -1,5 +1,6 @@
 export class User {
-    name:string;
-    email:string;
-    type:string;
+    token_type:string;
+    expires_in:number;
+    access_token: string;
+    refresh_token: string;
 }

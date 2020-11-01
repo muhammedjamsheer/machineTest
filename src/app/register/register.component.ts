@@ -10,6 +10,7 @@ import { NotificationService } from '../_service/notification.service'
   styleUrls: ['./register.component.scss']
 })
 export class RegisterComponent implements OnInit {
+  color: string;
   registerform: FormGroup;
   loading = false;
   submitted = false;

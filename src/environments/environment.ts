@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  baseUrl:"https://www.boredapi.com/documentation"
+  apiUrl:"http://52.15.242.195/officeapi/public/"
 };
 
 /*

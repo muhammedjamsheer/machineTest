@@ -8,7 +8,7 @@ import { User } from '../_model/user';
 })
 export class RegisterService {
 
-  baseurl = environment.baseUrl;
+  baseurl = environment.apiUrl;
   httpOptions = { headers: new HttpHeaders({ 'Content-Type': 'application/json' }) }
 
   constructor(

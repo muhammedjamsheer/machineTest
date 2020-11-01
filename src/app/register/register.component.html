@@ -2,9 +2,18 @@
     <div class="row">
         <div class="col-md-6 offset-md-3">
             <div class="card">
-                <h4 class="card-header">Register</h4>
+                <h4  class="card-header">Register</h4>
                 <form [formGroup]="registerform" (ngSubmit)="onSubmit()">
                     <div class="card-body">
+                        <div>
+                            <input type="radio" name="colors" (click)="color='lightgreen'">Green
+                            <input type="radio" name="colors" (click)="color='yellow'">Yellow
+                            <input type="radio" name="colors" (click)="color='cyan'">Cyan
+                          </div>
+                          <p [appHighlight]="color">Highlight me!</p>
+                          <p [appHighlight]="color" defaultColor="violet">
+                            Highlight me too!
+                          </p>
                         <div class="form-group">
                             <label for="name"> Name</label>
                             <input type="text" formControlName="name" class="form-control"
@@ -41,7 +50,7 @@
                                 <span *ngIf="loading" class="spinner-border spinner-border-sm mr-1"></span>
                                 Register
                             </button>
-                            <a routerLink="/" class="btn btn-link">Cancel</a>
+                            <a routerLink="/login" class="btn btn-link">Login</a>
                         </div>
                     </div>
                 </form>
